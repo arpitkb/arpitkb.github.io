@@ -1,8 +1,8 @@
-import logo from "./logo.svg";
 import "./App.css";
+import UnderConst from "./components/UnderConst";
 
 function App() {
-  return <div className="App">This site is under construction</div>;
+  return <UnderConst />;
 }
 
 export default App;

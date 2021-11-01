@@ -1,13 +1,40 @@
 body {
-  margin: 0;
-  font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto', 'Oxygen',
-    'Ubuntu', 'Cantarell', 'Fira Sans', 'Droid Sans', 'Helvetica Neue',
-    sans-serif;
-  -webkit-font-smoothing: antialiased;
-  -moz-osx-font-smoothing: grayscale;
+  background-image: url("https://i.imgur.com/SUHmERE.png");
+  background-repeat: repeat;
 }
-
-code {
-  font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
-    monospace;
+h1 {
+  text-shadow: 1px 1px 1px #606060;
+  opacity: 0.95;
+  margin-top: 15px;
+  font-size: 35px;
+  color: #202020;
+  font-family: Verdana, Geneva, sans-serif;
+}
+h2 {
+  text-shadow: 1px 1px 1px #606060;
+  opacity: 0.95;
+  margin-top: -20px;
+  font-size: 25px;
+  color: #202020;
+  font-family: Verdana, Geneva, sans-serif;
+}
+div.overlay {
+  width: 100%;
+  position: absolute;
+  top: 0;
+  right: 0;
+  bottom: 0;
+  background-color: black;
+  opacity: 0.4;
+  filter: alpha(opacity=40);
+}
+div.text {
+  text-align: center;
+}
+div.image {
+  margin: 5rem auto;
+  width: 100%;
+  text-align: center;
+  opacity: 0.6;
+  box-shadow: 2px 2px 2px #606060;
 }
