@@ -55,8 +55,8 @@ p {
 }
 
 .btn {
-  padding: 10px 25px;
-  border-radius: 100px;
+  padding: 8px 20px;
+  border-radius: 40px;
 }
 
 .btn-social {
@@ -186,13 +186,13 @@ p {
 /*===================== Progress Bar ====================*/
 
 .progress {
-  border-radius: 10px;
+  border-radius: 15px;
 }
 
 .progress .progress-bar {
   width: 0px;
-  border-radius: 10px;
-  transition: 2s;
+  border-radius: 15px;
+  transition: 1.5s;
 }
 
 /* =================== Queality ======================*/
@@ -226,50 +226,30 @@ p {
 }
 /* =================== Portfolio section ==================*/
 
-.portfolio-item .portfolio-btn {
+.p-btn-con {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.portfolio-item .p-btn {
   position: absolute;
-  width: 0;
-  height: 0;
-  top: 50%;
-  left: 50%;
-  border-radius: 4px;
+  top: 80%;
   opacity: 0;
-  transition: 0.5s;
+  transition: all 0.2s ease-out;
 }
 
-.portfolio-item:hover .portfolio-btn {
+.portfolio-item:hover .p-btn {
   opacity: 1;
-  width: calc(100% - 60px);
-  height: calc(100% - 60px);
-  top: 30px;
-  left: 30px;
+  top: 30%;
 }
 
-/* ====================== Testimonial ================*/
-.testimonial-carousel .text-center {
-  background-color: #eaecf0d0;
-  border-radius: 20px;
-  margin: 20px;
-}
-.testimonial-carousel .text-center h4 {
+.portfolio-item img {
+  transition: all 0.35s ease-out;
 }
 
-.testimonial-carousel .owl-dots {
-  margin-top: 25px;
-  text-align: center;
-}
-
-.testimonial-carousel .owl-dot {
-  display: inline-block;
-  margin: 0 5px;
-  width: 12px;
-  height: 12px;
-  border-radius: 10px;
-  background: #dddddd;
-}
-
-.testimonial-carousel .owl-dot.active {
-  background: #0bceaf;
+.portfolio-item:hover img {
+  filter: brightness(0.3);
 }
 
 /* ========================== Contact Us ========================*/
@@ -278,6 +258,12 @@ p {
   margin: 0;
   padding: 0;
   list-style-type: none;
+}
+
+.help-block {
+  color: #e7492dcc;
+  text-align: left;
+  margin-left: 2%;
 }
 
 /*====================== Back to buttom ==================*/
