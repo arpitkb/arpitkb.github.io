@@ -30,7 +30,7 @@ a {
 
 a:hover {
   color: #078571;
-  text-decoration: underline;
+  text-decoration: none;
 }
 
 h1,
@@ -59,15 +59,23 @@ p {
   border-radius: 40px;
 }
 
-.btn-social {
-  width: 45px;
-  height: 45px;
-  padding-left: 0;
-  padding-right: 0;
-  text-align: center;
-  border-radius: 45px;
-  border: 2px solid rgba(61, 37, 43, 0.5);
+.proj .btn {
+  /* color: #570c1f88; */
+  padding: 8px 20px;
+  border-radius: 40px;
+  opacity: 0.5;
+  /* border: 1px solid #570c1f88; */
 }
+
+/* .proj .btn:hover,
+.proj .btn:active {
+  color: white;
+  background-color: #570c1f88;
+  border: 1px solid #570c1f88;
+} */
+/* 
+.btn-social {
+} */
 
 .form-control {
   border-radius: 25px;
@@ -107,10 +115,10 @@ p {
   background-color: #d8e2dc;
 }
 .bg-2 {
-  background-color: #ffe5d9;
+  background-color: #ccb7ae;
 }
 .bg-3 {
-  background-color: #ffcad4;
+  background-color: #a6808c96;
 }
 .bg-4 {
   background-color: #f4acb7;
@@ -118,13 +126,19 @@ p {
 .bg-5 {
   background-color: #9d8189;
 }
+.bg-6 {
+  background-color: #565264;
+}
+.bg-7 {
+  background-color: #706677;
+}
 
 .text-1 {
   color: #d8e2dc;
 }
 
 .text-2 {
-  color: #ffe5d9;
+  color: #ccb7ae;
 }
 .text-3 {
   color: #ffcad4;
@@ -135,16 +149,26 @@ p {
 .text-5 {
   color: #9d8189;
 }
+.text-6 {
+  color: #565264;
+}
+.text-7 {
+  color: #706677;
+}
+
+.text-intro {
+  color: #ece0f0e0;
+}
+
+.text-gd {
+  color: linear-gradient(#dddddd, #0616c2);
+  -webkit-text-stroke: 3.5px;
+}
 
 /*===================== Hero section ======================*/
 
 .mainTop {
-  background-color: #cdb4db;
-}
-
-.about-img {
-  margin-left: -100px;
-  right: -60px;
+  background-color: #bea5cca2;
 }
 
 .display-1 {
@@ -176,13 +200,41 @@ p {
   border: 2.4px solid #ffffff;
   color: #ffffff;
 }
-@media (max-width: 700px) {
+
+.btn-cv {
+  color: white;
+  background-color: #47334eb4;
+  transition: all 0.2s ease-in-out;
+}
+.btn-cv:hover {
+  background-color: #ece0f0e0;
+  transform: translateX(15px);
+}
+
+.about-img {
+  width: 70%;
+  box-shadow: 3px 5px 8px 1px #9d8aa85d;
+}
+/* @media (max-width: 700px) {
   .about-img {
     margin-left: 20px;
     right: 0px;
     top: 30px;
   }
+} */
+
+/* ==============about================ */
+
+.aboutme p {
+  font-size: 22px;
+  font-weight: lighter;
 }
+
+.aboutme span {
+  color: #a82a9e63;
+  font-weight: 400;
+}
+
 /*===================== Progress Bar ====================*/
 
 .progress {
@@ -200,30 +252,6 @@ p {
   margin-top: 35px;
 }
 
-/* =================== Service Section ==================*/
-.service-h4 {
-  padding-bottom: 30px;
-}
-
-.service-icon {
-  width: 60px;
-  height: 60px;
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  border-radius: 60px;
-}
-
-.service-box {
-  box-shadow: 0px 1px 7px rgba(0, 0, 0, 0.1);
-  margin-left: 20px;
-  padding: 15px;
-  padding-left: 30px;
-  padding-right: 30px;
-}
-.service-box:hover {
-  box-shadow: 0px 1px 13px rgba(27, 27, 27, 0.705);
-}
 /* =================== Portfolio section ==================*/
 
 .p-btn-con {
@@ -232,16 +260,20 @@ p {
   align-items: center;
 }
 
+.p-btn {
+  height: 65%;
+}
+
 .portfolio-item .p-btn {
   position: absolute;
-  top: 80%;
+  top: 100%;
   opacity: 0;
   transition: all 0.2s ease-out;
 }
 
 .portfolio-item:hover .p-btn {
   opacity: 1;
-  top: 30%;
+  top: 17%;
 }
 
 .portfolio-item img {
@@ -249,21 +281,37 @@ p {
 }
 
 .portfolio-item:hover img {
-  filter: brightness(0.3);
+  filter: brightness(0.5);
+}
+/* 
+.portfolio-container img {
+  height: 100%;
+} */
+
+.modal-content {
+  background-color: #a8a7a7ef;
+  color: white;
+  border-radius: 15px;
+  bottom: 0 solid red;
 }
 
-/* ========================== Contact Us ========================*/
+/* ========================== Footer ========================*/
 
-.contact-form .help-block ul {
-  margin: 0;
-  padding: 0;
-  list-style-type: none;
+.footer .btn {
+  width: 45px;
+  height: 45px;
+  padding-left: 0;
+  padding-right: 0;
+  text-align: center;
+  border-radius: 45px;
+  border: 2px solid rgba(68, 32, 41, 0.5);
+  margin: auto 0.4rem;
 }
 
-.help-block {
-  color: #e7492dcc;
-  text-align: left;
-  margin-left: 2%;
+.footer a:hover {
+  background-color: #3d3f41;
+  color: rgb(247, 239, 239);
+  border: 0px solid black;
 }
 
 /*====================== Back to buttom ==================*/
